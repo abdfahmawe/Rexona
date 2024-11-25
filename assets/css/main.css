@@ -1,4 +1,4 @@
-.bg-body-tertiary {
+.header-with-swiper {
   background-color: #f5f5f5 !important;
 }
 .swiper {
@@ -15,4 +15,7 @@
 }
 .nav-link {
   color: black;
+}
+.header-white {
+  background-color: white !important;
 }
