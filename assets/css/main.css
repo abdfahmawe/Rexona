@@ -175,76 +175,97 @@ body {
 }
 .sec-three {
   padding: 30px;
+  display: flex;
+  flex-wrap: wrap; /* Ensures proper wrapping for smaller screens */
+  gap: 20px; /* Adds spacing between elements */
+  align-items: stretch; /* Ensures consistent height alignment */
 }
+
 .sec-three .left {
   background-image: url(../image/sec-three/mackbook.jpg);
   background-size: cover; /* Ensures the entire image is visible */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  width: 49%;
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
+  flex: 1; /* Takes up equal space */
   height: 400px;
-}
-.sec-three p {
-  color: rgb(0, 0, 0, 0.8);
-  font-weight: 400;
 }
 
-.sec-three a {
-  text-decoration: underline;
-  line-height: normal;
-  display: inline-flex;
-  align-items: center;
-  color: black;
-  cursor: pointer;
-  font-weight: 400;
-}
 .sec-three .right {
-  justify-content: space-between;
-  width: 49%;
-  height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adds spacing between top and bottom sections */
+  flex: 1; /* Takes up equal space */
 }
+
 .sec-three .right .top {
-  background-size: cover; /* Ensures the entire image is visible */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  height: 50%;
   background-image: url(../image/sec-three/funiture.jpg);
+  background-size: cover; /* Ensures the entire image is visible */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
+  height: 50%; /* Relative height within the right section */
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .sec-three .right .buttom {
   display: flex;
-  justify-content: space-between;
+  gap: 20px; /* Adds spacing between start and end sections */
+  flex: 1; /* Takes up remaining height */
 }
-.sec-three .right .buttom .start {
-  background-size: cover; /* Ensures the entire image is visible */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  width: 50%;
-  background-image: url(../image/sec-three/PowerBank.jpg);
-}
+
+.sec-three .right .buttom .start,
 .sec-three .right .buttom .end {
   background-size: cover; /* Ensures the entire image is visible */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  width: 50%;
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
+  flex: 1; /* Ensures equal widths for both sections */
+}
+
+.sec-three .right .buttom .start {
+  background-image: url(../image/sec-three/PowerBank.jpg);
+}
+
+.sec-three .right .buttom .end {
   background-image: url(../image/sec-three/Earpods.jpg);
 }
+
+/* Media Query for Responsiveness */
 @media screen and (max-width: 1000px) {
-  .sec-three .left {
-    width: 100%;
-    height: 200px;
-  }
-  .sec-three .right {
-    width: 100%;
-  }
-  .sec-three .right .buttom {
-    flex-direction: column;
-  }
-  .sec-three .right .buttom .start {
-    width: 100%;
-  }
-  .sec-three .right .buttom .end {
-    width: 100%;
-  }
   .sec-three {
-    gap: 10px;
+    flex-direction: column; /* Stacks sections vertically */
+    gap: 20px; /* Adds spacing between stacked sections */
   }
+
+  .sec-three .left,
+  .sec-three .right {
+    width: 100%; /* Full width on smaller screens */
+    height: auto; /* Adjusts height automatically based on content */
+  }
+
+  .sec-three .right .top,
+  .sec-three .right .buttom .start,
+  .sec-three .right .buttom .end {
+    height: 200px; /* Ensures consistent height for images */
+  }
+
+  .sec-three .right .buttom {
+    flex-direction: column; /* Stacks start and end sections */
+    gap: 10px; /* Adds spacing between stacked items */
+  }
+}
+
+.sec-five {
+  background-image: url(../image/sec-five/offer-bg.jpg);
+}
+.sec-five h2 {
+  font-size: 40px;
+}
+.sec-five p {
+  font-size: 20px;
+  margin: 0;
+}
+.sec-five p,
+.sec-five i {
+  color: rgb(0, 0, 0, 0.8);
 }
