@@ -27,7 +27,7 @@ body {
 }
 
 body {
-  background: #eee;
+  background: white;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
@@ -105,5 +105,71 @@ body {
   }
   .sec-one .swiper .swiper-slide div button {
     padding: 2px;
+  }
+}
+.sec-two {
+  box-shadow: 0px 1px 4px #888888;
+  padding: 30px;
+}
+.sec-two .part-one {
+  width: 20%;
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  justify-content: space-between; /* Optional for spacing */
+  align-items: center; /* Align items vertically */
+}
+.sec-two .part-one .image,
+.sec-two .part-one .data {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+}
+.sec-two .part-one .image {
+  width: 40%;
+}
+.sec-two .part-one .data {
+  width: 60%;
+}
+.sec-two div img {
+  width: 70%;
+  border-radius: 50%;
+}
+.sec-two h4 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+}
+.sec-two p {
+  margin: 0;
+  font-weight: 400;
+  color: rgb(0, 0, 0, 0.6);
+}
+.sec-two .blackline {
+  position: relative;
+}
+.sec-two .blackline ::after {
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 80%;
+  width: 1px;
+  content: "";
+
+  position: absolute;
+  right: -30px;
+  top: 0;
+  bottom: 0;
+}
+@media screen and (max-width: 1000px) {
+  .sec-two .part-one {
+    width: 40%;
+  }
+  .sec-two .dellete ::after {
+    width: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .sec-two .part-one {
+    width: 60%;
+  }
+  .sec-two .blackline ::after {
+    width: 0;
   }
 }
