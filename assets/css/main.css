@@ -173,3 +173,78 @@ body {
     width: 0;
   }
 }
+.sec-three {
+  padding: 30px;
+}
+.sec-three .left {
+  background-image: url(../image/sec-three/mackbook.jpg);
+  background-size: cover; /* Ensures the entire image is visible */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  width: 49%;
+  height: 400px;
+}
+.sec-three p {
+  color: rgb(0, 0, 0, 0.8);
+  font-weight: 400;
+}
+
+.sec-three a {
+  text-decoration: underline;
+  line-height: normal;
+  display: inline-flex;
+  align-items: center;
+  color: black;
+  cursor: pointer;
+  font-weight: 400;
+}
+.sec-three .right {
+  justify-content: space-between;
+  width: 49%;
+  height: 400px;
+}
+.sec-three .right .top {
+  background-size: cover; /* Ensures the entire image is visible */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 50%;
+  background-image: url(../image/sec-three/funiture.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec-three .right .buttom {
+  display: flex;
+  justify-content: space-between;
+}
+.sec-three .right .buttom .start {
+  background-size: cover; /* Ensures the entire image is visible */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  width: 50%;
+  background-image: url(../image/sec-three/PowerBank.jpg);
+}
+.sec-three .right .buttom .end {
+  background-size: cover; /* Ensures the entire image is visible */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  width: 50%;
+  background-image: url(../image/sec-three/Earpods.jpg);
+}
+@media screen and (max-width: 1000px) {
+  .sec-three .left {
+    width: 100%;
+    height: 200px;
+  }
+  .sec-three .right {
+    width: 100%;
+  }
+  .sec-three .right .buttom {
+    flex-direction: column;
+  }
+  .sec-three .right .buttom .start {
+    width: 100%;
+  }
+  .sec-three .right .buttom .end {
+    width: 100%;
+  }
+  .sec-three {
+    gap: 10px;
+  }
+}
