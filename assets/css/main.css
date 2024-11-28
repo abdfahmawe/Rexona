@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .header-with-swiper {
   background-color: #f5f5f5 !important;
 }
@@ -268,4 +271,164 @@ body {
 .sec-five p,
 .sec-five i {
   color: rgb(0, 0, 0, 0.8);
+}
+
+.sec-four .happy-weekend {
+  background-image: url(../image/sec-four/Smart\ Phone.jpg);
+  width: 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sec-four .collections {
+  width: 80%;
+  height: 400px;
+}
+.sec-four .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.sec-four .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-four .swiper-slide img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.sec-six {
+  margin-top: 20px;
+  position: relative;
+  box-sizing: border-box;
+}
+.sec-six .parent {
+  box-sizing: border-box;
+  width: 100%;
+}
+.sec-six .data {
+  background-image: url(../image/sec-six/1530x300_2e28ed71-62bb-427a-b209-0d157a29b986.jpg);
+  background-repeat: no-repeat;
+  background-size: contain; /* Ensures the image adjusts proportionally */
+  background-position: center; /* Keeps the background centered */
+  padding: 10px;
+  height: 300px;
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack child elements vertically */
+  justify-content: center; /* Center elements vertically */
+  align-items: center; /* Center elements horizontally */
+  text-align: center; /* Center-align text */
+  transition: all 1s ease;
+  box-sizing: border-box;
+  position: relative; /* Keeps child elements inside the container */
+  overflow: hidden; /* Prevents content from spilling out */
+}
+
+.sec-six::after {
+  content: "";
+  width: 14%;
+  height: 1px;
+  background-color: red;
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+
+.sec-six .data:hover {
+  transform: scale(1.1);
+}
+
+.sec-six .intro {
+  position: relative;
+}
+
+.sec-six .intro a,
+.sec-six .intro h2 {
+  position: absolute;
+}
+
+.sec-six .intro a {
+  right: 0;
+  color: #888888;
+  cursor: pointer;
+}
+
+.sec-six .intro a:hover {
+  color: red;
+}
+
+.sec-six .data span {
+  color: rgba(0, 0, 0, 0.8); /* Ensure text opacity works */
+  font-weight: 400;
+}
+
+.sec-six .data h4 {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Responsive styles for larger screens */
+@media screen and (max-width: 1200px) {
+  .sec-six .data {
+    height: 200px;
+  }
+  .sec-six .data h4 {
+    font-size: 30px;
+  }
+  .sec-six .data {
+    background-size: cover;
+  }
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 1000px) {
+  .sec-six .data h4 {
+    font-size: 20px; /* Reduce text size for smaller screens */
+    margin: 10px 0;
+  }
+
+  .sec-six .data span {
+    font-size: 14px;
+  }
+
+  .sec-six .data p {
+    font-size: 12px;
+  }
+}
+.sec-six .clock {
+  color: #000;
+}
+
+.sec-six .time:last-of-type {
+  border-right: 1px solid transparent;
+}
+.sec-six .time {
+  position: relative;
+}
+.sec-six .time::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 1px;
+  background-color: rgb(0, 0, 0, 0.5);
+  top: 0;
+  right: -14px;
+}
+.sec-six .time:last-of-type::after {
+  width: 0;
+}
+.sec-six #days,
+.sec-six #hours,
+.sec-six #minutes,
+.sec-six #seconds {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
 }
