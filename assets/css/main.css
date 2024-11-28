@@ -22,7 +22,24 @@ header .swiper {
 .header-white {
   background-color: white !important;
 }
-
+@media screen and (max-width: 1200px) {
+  .swiper-backface-hidden .swiper-slide {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .swiper-backface-hidden .swiper-slide {
+    font-size: 20px;
+  }
+  header .swiper {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .swiper-backface-hidden .swiper-slide {
+    font-size: 12px;
+  }
+}
 html,
 body {
   position: relative;
