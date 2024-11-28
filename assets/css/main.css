@@ -216,7 +216,10 @@ body {
   gap: 20px; /* Adds spacing between elements */
   align-items: stretch; /* Ensures consistent height alignment */
 }
-
+.sec-three a {
+  color: rgb(0, 0, 0, 0.5);
+  cursor: pointer;
+}
 .sec-three .left {
   background-image: url(../image/sec-three/mackbook.jpg);
   background-size: cover; /* Ensures the entire image is visible */
@@ -266,6 +269,18 @@ body {
   background-image: url(../image/sec-three/Earpods.jpg);
 }
 
+.sec-three .left,
+.sec-three .right .top,
+.sec-three .right .buttom .start,
+.sec-three .right .buttom .end {
+  transition: all 1s ease;
+}
+.sec-three .left:hover,
+.sec-three .right .top:hover,
+.sec-three .right .buttom .start:hover,
+.sec-three .right .buttom .end:hover {
+  transform: scale(1.05);
+}
 /* Media Query for Responsiveness */
 @media screen and (max-width: 1000px) {
   .sec-three {
