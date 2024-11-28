@@ -124,6 +124,9 @@ body {
 }
 
 @media screen and (max-width: 550px) {
+  .sec-one .swiper .swiper-slide div {
+    width: 100%;
+  }
   .sec-one .swiper .swiper-slide div p {
     font-size: 10px;
   }
@@ -131,9 +134,15 @@ body {
     font-size: 35px;
   }
   .sec-one .swiper .swiper-slide div button {
-    padding: 2px;
+    padding: 5px;
   }
 }
+@media screen and (max-width: 350px) {
+  .sec-one .swiper .swiper-slide {
+    padding: 30px;
+  }
+}
+
 .sec-two {
   box-shadow: 0px 1px 4px #888888;
   padding: 30px;
