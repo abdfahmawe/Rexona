@@ -48,6 +48,8 @@ const swiperfour = new Swiper(".sec-four .swiper", {
   // Optional parameters
   direction: "horizontal",
   slidesPerView: 4,
+  spaceBetween: 10,
+
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",

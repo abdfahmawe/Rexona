@@ -320,16 +320,31 @@ body {
 .sec-five i {
   color: rgb(0, 0, 0, 0.8);
 }
+/* here section four start */
 
 .sec-four .happy-weekend {
-  background-image: url(../image/sec-four/Smart\ Phone.jpg);
+  background-image: url(../image/sec-four/450x520.jpg);
   width: 20%;
   background-repeat: no-repeat;
   background-size: cover;
 }
+.sec-four .happy-weekend .data {
+  color: white;
+  padding: 20px;
+}
 .sec-four .collections {
   width: 80%;
-  height: 400px;
+  height: 100%;
+  position: relative;
+}
+.sec-four .collections::after {
+  content: "";
+  height: 2px;
+  width: 18%;
+  background-color: #cb0000;
+  position: absolute;
+  top: 44px;
+  left: 0px;
 }
 .sec-four .swiper {
   width: 100%;
@@ -344,12 +359,84 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+.sec-four .swiper-slide .data {
+  background-color: #f5f5f5;
+  transition: all 1s ease;
+}
+.sec-four .swiper-slide .data:hover {
+  transform: scale(1.05);
+}
+.sec-four .swiper-slide .data a {
+  color: black;
+  text-decoration: none;
+}
 .sec-four .swiper-slide img {
   display: block;
   width: 100%;
   object-fit: cover;
 }
+.sec-four .collections .diriction {
+  position: absolute;
+  top: 16px;
+  right: 23px;
+  flex-direction: row-reverse;
+}
+
+.sec-four .swiper-button-next:after {
+  position: absolute;
+  border-radius: 20%;
+  color: white;
+  background-color: #d60000;
+  padding: 7px;
+  font-size: 18px;
+}
+.sec-four .swiper-button-prev:after {
+  position: absolute;
+  border-radius: 20%;
+  color: white;
+  background-color: #d60000;
+  padding: 7px;
+  font-size: 18px;
+}
+.sec-four .swiper-button-next {
+  left: 0; /* Move "Next" button to the left */
+  right: auto;
+}
+
+.sec-four .swiper-button-prev {
+  right: 0; /* Move "Prev" button to the right */
+  left: auto;
+}
+.sec-four .swiper-button-next:after,
+.sec-four .swiper-button-prev:after {
+  transition: all 1s ease;
+}
+
+.sec-four .swiper-button-next:hover:after,
+.sec-four .swiper-button-prev:hover:after {
+  transition: (1.2s);
+  background-color: black;
+  /* background: linear-gradient(to left, #fc0404, #640101); */
+}
+@media screen and (max-width: 1000px) {
+  .sec-four {
+    flex-wrap: wrap;
+  }
+  .sec-four .happy-weekend {
+    width: 100%;
+    /* height: 150px; */
+  }
+  .sec-four .collections {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .sec-four .collections::after {
+    top: 42px;
+    width: 25%;
+  }
+}
+/* here section four end */
 
 .sec-six {
   margin-top: 20px;
@@ -420,6 +507,9 @@ body {
   font-size: 40px;
   font-weight: bold;
   text-transform: uppercase;
+  background: linear-gradient(#b2910d, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Responsive styles for larger screens */
