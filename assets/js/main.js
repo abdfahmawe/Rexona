@@ -69,7 +69,7 @@ const swiperfour = new Swiper(".sec-four .swiper", {
 
 // Target date for Black Friday
 // Target date for Black Friday
-const targetDate = new Date("November 29, 2024 00:00:00").getTime();
+const targetDate = new Date("November 29, 2025 00:00:00").getTime();
 
 // Function to update the countdown
 function updateCountdown() {
