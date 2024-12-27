@@ -57,13 +57,32 @@ const swiperfour = new Swiper(".sec-four .swiper", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".sec-four-next",
+    prevEl: ".sec-four-prev",
   },
 
   // And if we need scrollbar
   scrollbar: {
     el: ".swiper-scrollbar",
+  },
+
+  breakpoints: {
+    100: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    676: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    1006: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
   },
 });
 
@@ -110,3 +129,129 @@ const countdownInterval = setInterval(updateCountdown, 1000);
 
 // Initialize countdown immediately
 updateCountdown();
+
+// swiper for section siven
+const swipersiven = new Swiper(".sec-siven .swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  slidesPerView: 4,
+  spaceBetween: 10,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".sec-siven-next",
+    prevEl: ".sec-siven-prev",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+
+  breakpoints: {
+    100: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    676: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    1006: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+  },
+});
+
+// swiper for section eight
+
+var swiperfroseceight = new Swiper(".egiht", {
+  direction: "horizontal",
+  slidesPerView: 7,
+  centeredSlides: false,
+  spaceBetween: 30,
+  grabCursor: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".eight-swiper-pagination",
+    clickable: true,
+  },
+
+  breakpoints: {
+    150: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    320: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    676: {
+      slidesPerView: 5,
+      spaceBetween: 10,
+    },
+    1006: {
+      slidesPerView: 7,
+      spaceBetween: 10,
+    },
+  },
+});
+window.addEventListener("load", () => {
+  swiperfroseceight.update();
+});
+
+// swiper for secion nine
+const swipernine = new Swiper(".sec-nine .swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  slidesPerView: 3,
+  spaceBetween: 10,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".sec-siven-next",
+    prevEl: ".sec-siven-prev",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+
+  breakpoints: {
+    100: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    676: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    1006: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+  },
+});
