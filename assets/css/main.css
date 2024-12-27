@@ -169,6 +169,10 @@ body {
 .sec-two div img {
   width: 70%;
   border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+.sec-two div img:hover {
+  transform: translateY(-10px);
 }
 .sec-two h4 {
   font-family: "Work Sans", sans-serif;
