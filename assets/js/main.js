@@ -255,3 +255,22 @@ const swipernine = new Swiper(".sec-nine .swiper", {
     },
   },
 });
+
+function checkVisibility() {
+  const sections = document.querySelectorAll(
+    ".sec-two, .sec-three, .sec-four, .sec-five, .sec-six"
+  );
+  const windowHeight = window.innerHeight;
+
+  sections.forEach((section) => {
+    const sectionTop = section.getBoundingClientRect().top;
+
+    if (sectionTop < windowHeight - 50) {
+      section.classList.add("visible");
+    }
+  });
+}
+
+// Run the visibility check on page load and scroll
+document.addEventListener("scroll", checkVisibility);
+document.addEventListener("DOMContentLoaded", checkVisibility);

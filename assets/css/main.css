@@ -147,6 +147,20 @@ body {
   box-shadow: 0px 1px 4px #888888;
   padding: 30px;
 }
+.sec-two,
+.sec-three,
+.sec-four,
+.sec-five,
+.sec-six {
+  transition: all 0.6s ease-in-out; /* Smooth transition */
+  opacity: 0; /* Start invisible */
+
+  transform: translateY(50px); /* Start slightly off position */
+}
+.visible {
+  transform: translateY(0); /* Reset to normal position */
+  opacity: 1; /* Fully visible */
+}
 .sec-two .part-one {
   width: 20%;
   display: flex;
